@@ -1,4 +1,3 @@
-changeContrast()
 
 //clock
 function startTime() {
@@ -14,8 +13,7 @@ function checkTime(i) {
     return i;
 }
 
-
-function changeContrast(contrast = localStorage.getItem('isContrast')) {
+function changeContrast() {
 
     let root = document.documentElement
 
@@ -26,9 +24,6 @@ function changeContrast(contrast = localStorage.getItem('isContrast')) {
         document.getElementById('icon_contrast').src = "/svg/icons/contrast_lightGray.svg";
         document.getElementById('icon_color').src = "/svg/icons/color_lightGray.svg";
         document.getElementById('logo').src = "/svg/logo_pamietnik/logo_pamietnik_lightGrey.svg";
-        if (contrast){
-            localStorage.setItem('isContrast', false);
-        }
     }
 
     else if(getComputedStyle(document.documentElement).getPropertyValue('--colorMain') == '#DEDEDE') {
@@ -38,8 +33,5 @@ function changeContrast(contrast = localStorage.getItem('isContrast')) {
         document.getElementById('icon_contrast').src = "/svg/icons/contrast_dark_gray.svg";
         document.getElementById('icon_color').src = "/svg/icons/color_darkGray.svg";
         document.getElementById('logo').src = "/svg/logo_pamietnik/logo_pamietnik_dark_gray.svg";
-        if (!contrast){
-            localStorage.setItem('isContrast', true);
-        }
     }
 }
