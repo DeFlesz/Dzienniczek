@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    --colorMain: #DEDEDE;
+    --colorBackground: #808080;
+
+    box-sizing: border-box;
+
+    /*inne kolory:*/
+
+    /*motyw ciemny szary:*/
+    /*colorMain: #808080;*/
+    /*Color Background: #DEDEDE;*/
+
+    /*motyw jasny różowy:*/
+    /*colorMain: #AD727F;*/
+    /*color Background: #FABEC8;*/
+
+    /*motyw ciemny różowy:*/
+    /*colorMain: #FABEC8;*/
+    /*color Background: #AD727F;*/
+
+}
