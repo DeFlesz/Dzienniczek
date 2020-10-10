@@ -1,17 +1,12 @@
-*{
-    margin: 0;
-    padding: 0;
-
-    --colorMain: #DEDEDE;
-    --colorBackground: #808080;
-
-    box-sizing: border-box;
+:root {
+    --colorMain:#808080;
+    --colorBackground: #DEDEDE;
 
     /*inne kolory:*/
 
     /*motyw ciemny szary:*/
-    /*colorMain: #808080;*/
-    /*Color Background: #DEDEDE;*/
+    /*colorMain: #DEDEDE ;*/
+    /*Color Background: #808080;*/
 
     /*motyw jasny różowy:*/
     /*colorMain: #AD727F;*/
@@ -21,4 +16,48 @@
     /*colorMain: #FABEC8;*/
     /*color Background: #AD727F;*/
 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--colorBackground);
+}
+
+#logo {
+    max-width: 350px;
+    height: auto;
+    text-align: center;
+    margin-top: -4%;
+}
+
+#logo_cont{
+    text-align: center;
+}
+
+#clock {
+    display: inline;
+    margin:0;
+}
+
+.icons {
+    padding: 0.5% 5% 0 0;
+    display: inline;
+    margin:0;
+}
+#icon_cont {
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+}
+
+header {
+    color: var(--colorMain);
+}
+#clock {
+    font-family: 'Piazzolla', serif;
+    font-size: 2.4em;
+    margin-top: -4%;
 }

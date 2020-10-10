@@ -11,6 +11,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -27,7 +28,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="node" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\huber\OneDrive\Dokumenty\GitHub\Dzienniczek\public\svg\logo_pamietnik" />
+      <recent name="C:\Users\huber\OneDrive\Dokumenty\GitHub\Dzienniczek\public\svg\icons" />
+      <recent name="C:\Users\huber\OneDrive\Dokumenty\GitHub\Dzienniczek\public\svg" />
+      <recent name="C:\Users\huber\OneDrive\Dokumenty\GitHub\Dzienniczek\public" />
+      <recent name="C:\Users\huber\OneDrive\Dokumenty\GitHub\Dzienniczek\node_modules" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="NodeJSConfigurationType" path-to-node="$APPLICATION_CONFIG_DIR$/node/node-v12.13.1-win-x64/node">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -39,6 +55,7 @@
       <updated>1602348060576</updated>
       <workItem from="1602348061648" duration="880000" />
       <workItem from="1602350686702" duration="652000" />
+      <workItem from="1602357470303" duration="8416000" />
     </task>
     <servers />
   </component>
@@ -46,6 +63,18 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="414" y="174" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602358299213">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602358299213" />
+    <state x="726" y="309" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602359505284">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="726" y="309" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1602359505284" />
+    <state x="677" y="339" key="jetbrains.nodejs.interpreters-dialog" timestamp="1602358295833">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="677" y="339" key="jetbrains.nodejs.interpreters-dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602358295833" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602348559751">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
