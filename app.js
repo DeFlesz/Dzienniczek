@@ -12,7 +12,6 @@ app.use(express.static(publicDirectory));
 app.set('view engine', 'hbs');
 
 app.use('/', require('./routes/pages'));
-app.use('/auth', require('./routes/auth'));
 
 
 
