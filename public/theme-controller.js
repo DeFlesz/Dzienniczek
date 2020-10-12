@@ -1,8 +1,14 @@
 //gathering local storage and root info
 let root = document.documentElement;
-let isContrast = localStorage.getItem('isContrast');
-let themeColour = localStorage.getItem('themeColour');
+let isContrast = localStorage.isContrast;
+let themeColour = localStorage.themeColour;
 
+if (!isContrast){
+    localStorage.isContrast = 'false';
+}
+if (!themeColour){
+    localStorage.themeColour = 'default';
+}
 //colour change coded to save space in other functions
 function colourAndShade(colour){
     switch(colour){
@@ -41,10 +47,10 @@ function colourAndShade(colour){
 
 function themeChange(){
     if (themeColour == 'default'){
-        localStorage.setItem('themeColour', 'pink');
+        localStorage.themeColour = 'pink';
     }
     else if (themeColour == 'pink'){
-        localStorage.setItem('themeColour', 'default');
+        localStorage.themeColour = 'default';
     }
     console.log(localStorage);
     themeAndContrastController('themeChange');
@@ -53,9 +59,9 @@ function themeChange(){
 
 function contrastSwitch(){
     if (isContrast == 'true'){
-        localStorage.setItem('isContrast', 'false');
+        localStorage.isContrast = 'false';
     } else {
-        localStorage.setItem('isContrast', 'true');
+        localStorage.isContrast = 'true';
     }
     console.log(localStorage);
     themeAndContrastController('contrastSwitch');
@@ -64,8 +70,8 @@ function contrastSwitch(){
 
 //main function
 function themeAndContrastController(action) {
-    isContrast = localStorage.getItem('isContrast');
-    themeColour = localStorage.getItem('themeColour');
+    isContrast = localStorage.isContrast;
+    themeColour = localStorage.themeColour;
     switch(action){
         case 'themeChange':
             if (themeColour == 'default'){
