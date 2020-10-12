@@ -1,7 +1,7 @@
 :root {
     --colorMain:#808080;
     --colorBackground: #DEDEDE;
-
+    --svgColour: #808080;
     /*inne kolory:*/
 
     /*motyw ciemny szary:*/
@@ -46,6 +46,9 @@ body {
     padding: 0.5% 5% 0 0;
     display: inline;
     margin:0;
+}
+svg{
+    fill: var(--svgColour);
 }
 button {
     background: transparent;
