@@ -24,14 +24,14 @@ function colourAndShade(colour){
             root.style.setProperty('--colorMain', '#AD727F');
             root.style.setProperty('--colorBackground', '#FABEC8');
             root.style.setProperty('--svgColour', '#AD727F');
-            document.getElementById('logo').src = "/svg/logo_pamietnik/logo_pamietnik_lightGrey.svg";
+            document.getElementById('logo').src = "/svg/logo_pamietnik/logo_pamietnik_darkPink.svg";
             break;
 
         case 'dPink':
             root.style.setProperty('--colorMain', '#FABEC8');
             root.style.setProperty('--colorBackground', '#AD727F');
             root.style.setProperty('--svgColour', '#FABEC8');
-            document.getElementById('logo').src = "/svg/logo_pamietnik/logo_pamietnik_lightGrey.svg";
+            document.getElementById('logo').src = "/svg/logo_pamietnik/logo_pamietnik_lightPink.svg";
             break;
 
         default:
