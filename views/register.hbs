@@ -18,16 +18,25 @@
 
     <header>
         <div id="icon_cont">
-        <img src="/svg/icons/contrast_dark_gray.svg" alt="ikona kontrast" id="icon_contrast" class="icons" onclick="changeContrast()">
-        <img src="/svg/icons/color_darkGray.svg" alt="ikona kolor" id="icon_color" class="icons">
-        <div id="clock" class="icons"></div>
+            <button id="contrast-switch" onclick="contrastSwitch();">
+                <img src="/svg/icons/contrast_dark_gray.svg" alt="ikona kontrast" id="icon_contrast" class="icons">
+            </button>
+            <button id="theme-switch" onclick="themeChange();">
+                <img src="/svg/icons/color_darkGray.svg" alt="ikona kolor" id="icon_color" class="icons">
+            </button>
+            <div id="clock" class="icons"></div>
         </div>
 
         <div id="logo_cont"><img src="/svg/logo_pamietnik/logo_pamietnik_dark_gray.svg" alt="logo_pamietnik" id="logo"/></div>
     </header>
     <div>
-<!--    <input name="email" type="text"/>-->
+<!--    
+        <form>
+            <input name="email" type="text"/>
+        </form>
+-->
     </div>
+    <script src="/theme-controller.js"></script>
 
 
 </body>

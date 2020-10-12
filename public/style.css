@@ -47,6 +47,12 @@ body {
     display: inline;
     margin:0;
 }
+button {
+    background: transparent;
+    cursor: pointer;
+    padding: 0px;
+    border: 2px;
+}
 #icon_cont {
     display: flex;
     justify-content: space-evenly;

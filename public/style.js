@@ -1,4 +1,3 @@
-
 //clock
 function startTime() {
     var today = new Date();
@@ -13,6 +12,7 @@ function checkTime(i) {
     return i;
 }
 
+/* old change contrast code (not saving status in local storage)
 function changeContrast() {
 
     let root = document.documentElement
@@ -35,3 +35,4 @@ function changeContrast() {
         document.getElementById('logo').src = "/svg/logo_pamietnik/logo_pamietnik_dark_gray.svg";
     }
 }
+*/
