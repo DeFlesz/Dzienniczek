@@ -1,15 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl-PL">
 <head>
+    <title>Document</title>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona Główna</title>
-</head>
-<body>
-    <ul>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-    </ul>
+
+    <!--    styles-->
+    <link rel="stylesheet" href="/style.css">
+    <script src="/style.js"></script>
+
+
+    <!--    fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100;700&display=swap" rel="stylesheet"></head>
+<body onload="startTime()">
+
+
+<header>
+    <div id="icon_cont">
+        <button id="contrast-switch" onclick="contrastSwitch();">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30.849" height="30.849" viewBox="0 0 30.849 30.849" alt="ikona kontrast" class="icons">
+                <path class="a" d="M17.995,1.928A15.424,15.424,0,1,0,33.419,17.352,15.424,15.424,0,0,0,17.995,1.928ZM6.427,17.352A11.568,11.568,0,0,1,17.995,5.784V28.921A11.568,11.568,0,0,1,6.427,17.352Z" transform="translate(-2.571 -1.928)"/>
+            </svg>
+        </button>
+        <button id="theme-switch" onclick="themeChange();">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" alt="ikona kolor" class="icons">
+                <path class="a" d="M33.1,26.68a3.648,3.648,0,0,0-1.922-.7,2.86,2.86,0,0,1-1.766-.781,2.166,2.166,0,0,1,0-3.422l2.367-2.1a7.607,7.607,0,0,0,0-11.656A15.019,15.019,0,0,0,21.8,4.5,18.885,18.885,0,0,0,9.391,9.2a13.689,13.689,0,0,0,0,20.977A18.289,18.289,0,0,0,21.335,34.5h.133a17.58,17.58,0,0,0,11.624-4.094A2.637,2.637,0,0,0,33.1,26.68ZM8.875,16.375a2.5,2.5,0,1,1,2.5,2.5A2.5,2.5,0,0,1,8.875,16.375ZM12,26.219a2.5,2.5,0,1,1,2.5-2.5A2.5,2.5,0,0,1,12,26.219Zm5-12.578a2.5,2.5,0,1,1,2.5-2.5A2.5,2.5,0,0,1,17,13.641ZM22.624,30.75A3.75,3.75,0,1,1,26.374,27,3.751,3.751,0,0,1,22.624,30.75ZM24.5,14.5A2.5,2.5,0,1,1,27,12,2.5,2.5,0,0,1,24.5,14.5Z" transform="translate(-4.498 -4.5)"/>
+            </svg>
+        </button>
+        <div id="clock" class="icons"></div>
+    </div>
+
+    <div id="logo_cont">
+        <img src="/svg/logo_pamietnik/logo_pamietnik_dark_gray.svg" alt="logo_pamietnik" id="logo"/>
+    </div>
+</header>
+<div>
+
+
+
+
+</div>
+
+<script src="/theme-controller.js"></script>
 </body>
 </html>

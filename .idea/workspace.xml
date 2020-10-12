@@ -5,6 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/theme-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/dashboard.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/dashboard.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.hbs" afterDir="false" />
     </list>
     <list id="d806c277-7060-42e2-a1ab-5e5b27743823" name="Revert &quot;Update README&quot;" comment="Revert &quot;Update README&quot;&#10;&#10;This reverts commit 5a66ed70" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +64,7 @@
       <workItem from="1602348061648" duration="880000" />
       <workItem from="1602350686702" duration="652000" />
       <workItem from="1602357470303" duration="8416000" />
-      <workItem from="1602521176890" duration="444000" />
+      <workItem from="1602521176890" duration="1210000" />
     </task>
     <servers />
   </component>

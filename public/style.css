@@ -51,10 +51,13 @@ svg{
     fill: var(--svgColour);
 }
 button {
-    background: transparent;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
     cursor: pointer;
-    padding: 0px;
-    border: 2px;
+    outline: inherit;
 }
 #icon_cont {
     display: flex;
@@ -72,11 +75,5 @@ header {
 }
 
 button {
-    background: none;
-    color: inherit;
-    border: none;
-    padding: 0;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
+
 }
