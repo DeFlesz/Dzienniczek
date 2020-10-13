@@ -15,28 +15,24 @@ function colourAndShade(colour){
         case 'lDefault':
             root.style.setProperty('--colorMain', '#DEDEDE');
             root.style.setProperty('--colorBackground', '#808080');
-            root.style.setProperty('--svgColour', '#DEDEDE');
             document.getElementById('logo').src = "/svg/logo_pamietnik/logo_pamietnik_lightGrey.svg";
             break;
             
         case 'dDefault':
             root.style.setProperty('--colorMain', '#808080');
             root.style.setProperty('--colorBackground', '#DEDEDE');
-            root.style.setProperty('--svgColour', '#808080');
             document.getElementById('logo').src = "/svg/logo_pamietnik/logo_pamietnik_dark_gray.svg";
             break;
 
         case 'lPink':
             root.style.setProperty('--colorMain', '#AD727F');
             root.style.setProperty('--colorBackground', '#FABEC8');
-            root.style.setProperty('--svgColour', '#AD727F');
             document.getElementById('logo').src = "/svg/logo_pamietnik/logo_pamietnik_darkPink.svg";
             break;
 
         case 'dPink':
             root.style.setProperty('--colorMain', '#FABEC8');
             root.style.setProperty('--colorBackground', '#AD727F');
-            root.style.setProperty('--svgColour', '#FABEC8');
             document.getElementById('logo').src = "/svg/logo_pamietnik/logo_pamietnik_lightPink.svg";
             break;
 

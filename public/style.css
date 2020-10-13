@@ -1,7 +1,7 @@
 :root {
     --colorMain:#808080;
     --colorBackground: #DEDEDE;
-    --svgColour: #808080;
+    /*--svgColour: #808080;*/
     /*inne kolory:*/
 
     /*motyw ciemny szary:*/
@@ -48,7 +48,7 @@ body {
     margin:0;
 }
 svg{
-    fill: var(--svgColour);
+    fill: var(--colorMain);
 }
 button {
     background: none;
@@ -58,6 +58,18 @@ button {
     font: inherit;
     cursor: pointer;
     outline: inherit;
+}
+input {
+    background: none;
+    color: inherit;
+    border: none;
+    border-bottom-style: solid;
+    border-bottom-color: var(--colorMain);
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+
 }
 #icon_cont {
     display: flex;
@@ -74,6 +86,41 @@ header {
     margin-top: -4%;
 }
 
-button {
+#chart {
+    background-color: var(--colorMain);
+    width: 200px;
 
 }
+form {
+    color: var(--colorMain);
+    font-family: 'Piazzolla', serif;
+    font-size: 1.6em;
+    /*display: inline;*/
+    /*text-align: center;*/
+
+}
+label, input {
+    margin-top: 10px;
+
+}
+form div{
+    display:inline-block;
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+}
+form div label{
+    float: left;
+}
+#register_box {
+    text-align: center;
+}
+a {
+    color: var(--colorMain);
+    font-family: 'Impact';
+    text-decoration: none;
+    font-size: 1.6em;
+    margin-left: 10px;
+
+}
+

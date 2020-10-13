@@ -15,7 +15,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100;700&display=swap" rel="stylesheet"></head>
 <body onload="startTime()">
 
-
     <header>
         <div id="icon_cont">
             <button id="contrast-switch" onclick="contrastSwitch();">
@@ -35,12 +34,19 @@
             <img src="/svg/logo_pamietnik/logo_pamietnik_dark_gray.svg" alt="logo_pamietnik" id="logo"/>
         </div>
     </header>
-    <div>
-        <!--    
+    <div id="register_box">
+
+        <a href="#">Register</a>
+        <a href="/login">Login</a>
+
         <form>
-            <input name="email" type="text"/>
+            <div>
+            <label for="email">Email: </label> <input id="email" type="text" name="email"><br>
+            <label for="password"> Hasło: </label> <input id="password" type="password" name="password"><br>
+            <label for="password_confirm">Powtórz hasło: </label> <input id="password_confirm" type="password" name="passwordConfirm"><br>
+            </div>
         </form>
-        -->
+
     </div>
 
     <script src="/theme-controller.js"></script>
