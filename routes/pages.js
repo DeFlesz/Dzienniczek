@@ -18,5 +18,9 @@ router.get('/dashboard', (req,res) => {
     res.render('dashboard');
 });
 
+router.get('/new_day_form', (req,res) => {
+    res.render('new_day_form');
+});
+
 
 module.exports = router;

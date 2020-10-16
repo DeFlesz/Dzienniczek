@@ -35,13 +35,69 @@
         <img src="/svg/logo_pamietnik/logo_pamietnik_dark_gray.svg" alt="logo_pamietnik" id="logo"/>
     </div>
 </header>
-<div id="chart">
 
+<nav>
+    <button class="tabchange" onclick="changeTab('Meal', this)" id="defaultOpen">Pożywienie</button>
+    <button class="tabchange" onclick="changeTab('Workout', this)">Trening</button>
+    <button class="tabchange" onclick="changeTab('Weight', this)">Waga</button>
+    <button class="tabchange" onclick="changeTab('Day_grade', this)">Ocena dnia</button>
+    <button class="tabchange" type="button" onclick="window.location.href='/dashboard'">X</button>
+</nav>
 
+<div id="Meal" class="tabcontent">
+    <form>
+        <ul>
+            <li>
+                <label>Śniadanie: </label>
+                <input type="text" id="breakfast" name="breakfast">
+                <label> kalorii</label>
+            </li>
+            <li>
+                <label>Obiad: </label>
+                <input type="text" id="dinner" name="dinner">
+                <label> kalorii</label>
+            </li>
+            <li>
+                <label>Kolacja: </label>
+                <input type="text" id="supper" name="supper">
+                <label> kalorii</label>
+            </li>
+            <li>
+                <label>Innne posiłki: </label>
+                <input type="text" id="other_meal" name="other_meal">
+                <label> kalorii</label>
+            </li>
+        </ul>
+    </form>
 </div>
-<div class="input_buttons">
-    <button type="button" onclick="window.location.href='/new_day_form'">Wprowadź<br> nowy<br> dzień<br></button>
-    <button type="button" onclick="window.location.href='#'">Moje<br> dni<br></button>
+
+<div id="Workout" class="tabcontent">
+    <p>Czy odbyłeś/aś dzisiaj trening?</p>
+    <button>tak</button>
+    <button>nie</button>
+</div>
+
+<div id="Weight" class="tabcontent">
+    <p>Czy ważyłeś/aś się dzisiaj?</p>
+    <button>tak</button>
+    <button>nie</button>
+</div>
+
+<div id="Day_grade" class="tabcontent">
+    <p>Jak oceniasz swój dzień?</p>
+    <select name="Day_grade" id="Day_grade">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
 </div>
 
 <script src="/theme-controller.js"></script>

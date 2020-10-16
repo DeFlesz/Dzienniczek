@@ -106,5 +106,20 @@ function themeAndContrastController(action) {
     }
 }
 
+function changeTab(tabName, actTab) {
+    var i, tabcontent, tabchanges;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tabchanges = document.getElementsByClassName("tabchange");
+    for (i = 0; i < tabchanges.length; i++) {
+        tabchanges[i].style.textDecoration = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+    actTab.style.textDecoration = 'underline';
+}
+
 themeAndContrastController('contrastSwitch');
 themeAndContrastController('themeChange');
+document.getElementById("defaultOpen").click();
