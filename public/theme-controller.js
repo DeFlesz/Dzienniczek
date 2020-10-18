@@ -120,6 +120,26 @@ function changeTab(tabName, actTab) {
     actTab.style.textDecoration = 'underline';
 }
 
+function underLine(number){
+    switch(number){
+        case 1:
+            document.getElementsByName('Meal')[0].click();
+            break;
+
+        case 2:
+            document.getElementsByName('Workout')[0].click();
+            break;
+
+        case 3:
+            document.getElementsByName('Weight')[0].click();
+            break;
+
+        case 4:
+            document.getElementsByName('Day_grade')[0].click();
+            break;
+    }
+}
+
 themeAndContrastController('contrastSwitch');
 themeAndContrastController('themeChange');
 document.getElementById("defaultOpen").click();

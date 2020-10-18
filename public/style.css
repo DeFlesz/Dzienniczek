@@ -145,7 +145,6 @@ a {
     outline: none;
     cursor: pointer;
     padding-bottom: 0;
-    font-size: 17px;
     width: 16%;
     background: none;
     padding: 0;
@@ -159,6 +158,11 @@ a {
     color: var(--colorMain);
     display: none;
     text-align: center;
+    font-size: 32px;
     padding: 100px 20px;
     height: 100%;
-  }
+}
+
+nav{
+    font-size: 32px;
+}

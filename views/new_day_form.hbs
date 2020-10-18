@@ -37,14 +37,15 @@
 </header>
 
 <nav>
-    <button class="tabchange" onclick="changeTab('Meal', this)" id="defaultOpen">Pożywienie</button>
-    <button class="tabchange" onclick="changeTab('Workout', this)">Trening</button>
-    <button class="tabchange" onclick="changeTab('Weight', this)">Waga</button>
-    <button class="tabchange" onclick="changeTab('Day_grade', this)">Ocena dnia</button>
+    <button class="tabchange" name="Meal" onclick="changeTab('Meal', this);" id="defaultOpen">Pożywienie</button>
+    <button class="tabchange" name="Workout" onclick="changeTab('Workout', this);">Trening</button>
+    <button class="tabchange" name="Weight" onclick="changeTab('Weight', this);">Waga</button>
+    <button class="tabchange" name="Day_grade" onclick="changeTab('Day_grade', this);">Ocena dnia</button>
     <button class="tabchange" type="button" onclick="window.location.href='/dashboard'">X</button>
 </nav>
 
 <div id="Meal" class="tabcontent">
+    <button style="float:right; margin-top: 17px;" onclick="underLine(2);"> > </button>
     <form>
         <ul>
             <li>
@@ -72,18 +73,23 @@
 </div>
 
 <div id="Workout" class="tabcontent">
+    <button style="float: left;" onclick="underLine(1);"> < </button>
     <p>Czy odbyłeś/aś dzisiaj trening?</p>
     <button>tak</button>
     <button>nie</button>
+    <button style="float: right;" onclick="underLine(3);"> > </button>
 </div>
 
 <div id="Weight" class="tabcontent">
+    <button style="float: left;" onclick="underLine(2);"> < </button>
     <p>Czy ważyłeś/aś się dzisiaj?</p>
     <button>tak</button>
     <button>nie</button>
+    <button style="float: right;" onclick="underLine(4);"> > </button>
 </div>
 
 <div id="Day_grade" class="tabcontent">
+    <button style="float: left;" onclick="underLine(3);"> < </button>
     <p>Jak oceniasz swój dzień?</p>
     <select name="Day_grade" id="Day_grade">
         <option value="0">0</option>
