@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b50d4770-fd95-4d2a-950b-5e4523d21b4a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/svg/icons/arrow/arrow_left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/icons/arrow/arrow_right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/icons/x.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/theme-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/theme-controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/dashboard.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/dashboard.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/register.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/register.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/new_day_form.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/new_day_form.hbs" afterDir="false" />
     </list>
     <list id="d806c277-7060-42e2-a1ab-5e5b27743823" name="Revert &quot;Update README&quot;" comment="Revert &quot;Update README&quot;&#10;&#10;This reverts commit 5a66ed70" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,22 +35,23 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/svg/logo_pamietnik" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/svg/icons/arrow" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\huber\OneDrive\Dokumenty\GitHub\Dzienniczek\public\svg\logo_pamietnik" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\huber\OneDrive\Dokumenty\GitHub\Dzienniczek\public\svg\logo_pamietnik" />
       <recent name="C:\Users\huber\OneDrive\Dokumenty\GitHub\Dzienniczek\public\svg\icons" />
+      <recent name="C:\Users\huber\OneDrive\Dokumenty\GitHub\Dzienniczek\public\svg\logo_pamietnik" />
       <recent name="C:\Users\huber\OneDrive\Dokumenty\GitHub\Dzienniczek\public\svg" />
       <recent name="C:\Users\huber\OneDrive\Dokumenty\GitHub\Dzienniczek\public" />
       <recent name="C:\Users\huber\OneDrive\Dokumenty\GitHub\Dzienniczek\node_modules" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\huber\OneDrive\Dokumenty\GitHub\Dzienniczek\public\svg\icons\arrow" />
+      <recent name="C:\Users\huber\OneDrive\Dokumenty\GitHub\Dzienniczek\public\svg\logo_pamietnik" />
     </key>
   </component>
   <component name="RunManager">
@@ -72,6 +73,9 @@
       <workItem from="1602521176890" duration="1210000" />
       <workItem from="1602523227172" duration="1099000" />
       <workItem from="1602524397203" duration="4543000" />
+      <workItem from="1602928228744" duration="55000" />
+      <workItem from="1603025204599" duration="677000" />
+      <workItem from="1603131595267" duration="3810000" />
     </task>
     <servers />
   </component>
@@ -101,6 +105,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="460" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602526416257" />
+    <state x="767" y="177" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603133709739">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="767" y="177" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603133709739" />
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602520663138">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

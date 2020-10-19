@@ -129,7 +129,7 @@ a {
     text-decoration: none;
     display: inline-block;
     font-size: 32px;
-    padding: auto;
+    /*padding: auto;*/
     margin: auto;
     cursor: pointer;
 }
@@ -149,16 +149,15 @@ a {
     background: none;
     padding: 0;
     font: inherit;
-    outline: inherit;
     text-align: center;
     margin-left: 4%;
+    font-family: 'Impact';
 }
 
 .tabcontent {
     color: var(--colorMain);
     display: none;
     text-align: center;
-    font-size: 32px;
     padding: 100px 20px;
     height: 100%;
 }
@@ -166,3 +165,21 @@ a {
 nav{
     font-size: 32px;
 }
+main div{
+    font-size: 32px ;
+}
+#Day_grade select {
+   background-color: var(--colorBackground);
+    color: var(--colorMain) ;
+    font-size: 30px;
+    border: none;
+    font-family: 'Piazzolla', serif;
+}
+#Day_grade select:after {
+    background-color: var(--colorBackground);
+    color: var(--colorMain) ;
+    font-size: 30px;
+    border: none;
+    font-family: 'Piazzolla', serif;
+}
+
