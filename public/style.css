@@ -175,11 +175,3 @@ main div{
     border: none;
     font-family: 'Piazzolla', serif;
 }
-#Day_grade select:after {
-    background-color: var(--colorBackground);
-    color: var(--colorMain) ;
-    font-size: 30px;
-    border: none;
-    font-family: 'Piazzolla', serif;
-}
-
