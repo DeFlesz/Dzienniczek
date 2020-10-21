@@ -175,3 +175,12 @@ main div{
     border: none;
     font-family: 'Piazzolla', serif;
 }
+
+div form select{
+    background-color: var(--colorBackground);
+    color: var(--colorMain) ;
+    font-size: 26px;
+    border: none;
+    font-family: 'Piazzolla', serif;
+    margin-top: 12px;
+}

@@ -41,9 +41,18 @@
 
         <form action="/auth/register" method="POST">
             <div>
-            <label for="email">Email: </label> <input id="email" type="email" name="email"><br>
+            <label for="name">Imię: </label> <input id="name" type="text" name="name"><br>
+            <label for="email">Email: </label> <input id="email" type="text" name="email"><br>
             <label for="password"> Hasło: </label> <input id="password" type="password" name="password"><br>
             <label for="password_confirm">Powtórz hasło: </label> <input id="password_confirm" type="password" name="passwordConfirm"><br>
+            <label for="date-of-birth">Rok Urodzenia: </label> <input id="date-of-birth" type="date-of-birth" name="date-of-birth"><br>
+            <label for="sex">Płeć: </label>
+            <select name="sex" id="sex">
+                <option value="m">Mężczyzna</option>
+                <option value="w">Kobieta</option>
+                <option value="n">Wolę nie mówić</option>
+            </select>
+            <br>
             <input type="submit" value="ok">
             </div>
         </form>
@@ -51,7 +60,7 @@
         {{#if message}}
             <p>{{message}}</p>
         {{/if}}
-
+        
     </div>
 
     <script src="/theme-controller.js"></script>
