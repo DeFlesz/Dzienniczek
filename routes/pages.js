@@ -26,7 +26,7 @@ router.get('/login', (req,res) => {
 
 
 router.get('/dashboard', (req, res) => {
-    if(!req.cookies){
+    if(!req.cookies.jwt){
         return res.render('index', {
             message: "nie jesteś zalogowany"
         })
