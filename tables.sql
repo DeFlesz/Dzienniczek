@@ -1,3 +1,5 @@
+create database pamietniki;
+
 CREATE TABLE users (
     id_user int primary key not null auto_increment, 
     name varchar(50) not null, 

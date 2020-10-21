@@ -39,12 +39,17 @@
     <a href="/register">Register</a>
     <a href="#">Login</a>
 
-    <form>
+    <form action="/auth/login" method="POST">
         <div>
             <label for="email">Email: </label> <input id="email" type="text" name="email"><br>
             <label for="password"> Hasło: </label> <input id="password" type="password" name="password"><br>
+            <input type="submit" value="ok">
         </div>
     </form>
+
+    {{#if message}}
+        <p>{{message}}</p>
+    {{/if}}
 
 </div>
 

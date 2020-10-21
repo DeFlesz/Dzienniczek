@@ -12,9 +12,9 @@ const db = mysql.createConnection({
 exports.register = (req, res) => {
     console.log(req.body);
 
-    const { email, password, passwordConfirm} = req.body;
+    const {email, password, passwordConfirm} = req.body;
 
-    db.query('SELECT login FROM users WHERE email = ?;', [email],async (error, results) => {
+    db.query('SELECT email FROM users WHERE email = ?;', [email],async (error, results) => {
         if(error){ 
             console.log(error);
         } 
@@ -81,7 +81,7 @@ exports.login = async (req, res) => {
                 }
 
                 res.cookie('jwt',token, cookieOptions);
-                res.status(200).redirect('/');
+                res.status(200).redirect('/dashboard');
 
             } else {
                 return res.render('login', {

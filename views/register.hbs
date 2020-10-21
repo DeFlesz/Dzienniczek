@@ -41,12 +41,16 @@
 
         <form action="/auth/register" method="POST">
             <div>
-            <label for="email">Email: </label> <input id="email" type="text" name="email"><br>
+            <label for="email">Email: </label> <input id="email" type="email" name="email"><br>
             <label for="password"> Hasło: </label> <input id="password" type="password" name="password"><br>
             <label for="password_confirm">Powtórz hasło: </label> <input id="password_confirm" type="password" name="passwordConfirm"><br>
             <input type="submit" value="ok">
             </div>
         </form>
+
+        {{#if message}}
+            <p>{{message}}</p>
+        {{/if}}
 
     </div>
 
