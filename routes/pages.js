@@ -26,6 +26,11 @@ router.get('/login', (req,res) => {
 
 
 router.get('/dashboard', (req, res) => {
+    if(!req.cookies){
+        return res.render('index', {
+            message: "nie jesteś zalogowany"
+        })
+    }
     let decodedCookie = jwt.decode(req.cookies.jwt);
 
     db.query('SELECT name FROM users WHERE id_user = ?;', [decodedCookie.id],async (error, results) => {
