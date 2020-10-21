@@ -184,3 +184,11 @@ div form select{
     font-family: 'Piazzolla', serif;
     margin-top: 12px;
 }
+
+.messages {
+    color: var(--colorMain);
+    font: inherit;
+    font-size: 20px;
+    padding: auto;
+    margin: auto;
+}

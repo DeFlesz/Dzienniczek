@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
-    <title>Document</title>
+    <title>Logowanie - pamiętniki.</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,14 +41,14 @@
 
     <form action="/auth/login" method="POST">
         <div>
-            <label for="email">Email: </label> <input id="email" type="text" name="email"><br>
-            <label for="password"> Hasło: </label> <input id="password" type="password" name="password"><br>
+            <label for="email">Email: </label> <input id="email" type="text" name="email" placeholder="e-mail@przyklad.com"><br>
+            <label for="password"> Hasło: </label> <input id="password" type="password" name="password" placeholder="haslo"><br>
             <input type="submit" value="ok">
         </div>
     </form>
 
     {{#if message}}
-        <p>{{message}}</p>
+        <p class="messages">{{message}}</p>
     {{/if}}
 
 </div>

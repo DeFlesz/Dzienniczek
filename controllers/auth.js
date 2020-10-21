@@ -27,11 +27,11 @@ exports.register = (req, res) => {
         } 
         if( results.length > 0) {
             return res.render('register', {
-                message: "that email is used"
+                message: "e-mail jest już użyty"
             });
         } else if (password !== passwordConfirm ) {
             return res.render('register', {
-                message: "passwords do not match"
+                message: "hasła sobie nie odpowiadają"
             });
         }
 
@@ -44,7 +44,7 @@ exports.register = (req, res) => {
                 console.log(error);
             } else {
                 return res.render('register', {
-                    message: "user registered"
+                    message: "zostałeś zarejestrowany"
                 });
             }
         });
@@ -58,7 +58,7 @@ exports.login = async (req, res) => {
         const {email, password} = req.body;
         if( !email || !password){
             return res.status(400).render('login',{
-                message: "please type email or password"
+                message: "pola e-mail lub hasło są puste"
             });
 
         }
@@ -67,7 +67,7 @@ exports.login = async (req, res) => {
             console.log(results);
             if(!results) {
                 return res.render('login', {
-                    message: "password or email is incorrect"
+                    message: "hasło lub e-mail są niepoprawne"
                 });
             } 
             try{
@@ -92,13 +92,13 @@ exports.login = async (req, res) => {
 
             } else {
                 return res.render('login', {
-                    message: "password or username is incorrect"
+                    message: "hasło lub e-mail są niepoprawne"
                 });
             }
             } catch (error) {
                 console.log(error);
                 return res.render('login', {
-                    message: "user or password is incorrect"
+                    message: "hasło lub e-mail są niepoprawne"
                 });
             }
         })

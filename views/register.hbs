@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
-    <title>Document</title>
+    <title>Rejestracja - pamiętniki.</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,10 +41,10 @@
 
         <form action="/auth/register" method="POST">
             <div>
-            <label for="name">Imię: </label> <input id="name" type="text" name="name"><br>
-            <label for="email">Email: </label> <input id="email" type="text" name="email"><br>
-            <label for="password"> Hasło: </label> <input id="password" type="password" name="password"><br>
-            <label for="password_confirm">Powtórz hasło: </label> <input id="password_confirm" type="password" name="passwordConfirm"><br>
+            <label for="name">Imię: </label> <input id="name" type="text" name="name" placeholder="imie"><br>
+            <label for="email">Email: </label> <input id="email" type="text" name="email" placeholder="e-mail@przyklad.com"><br>
+            <label for="password"> Hasło: </label> <input id="password" type="password" name="password" placeholder="haslo"><br>
+            <label for="password_confirm">Powtórz hasło: </label> <input id="password_confirm" type="password" name="passwordConfirm" placeholder="powtórz hasło"><br>
             <label for="date-of-birth">Rok Urodzenia: </label> <input id="date-of-birth" type="date" name="date_of_birth"><br>
             <label for="sex">Płeć: </label>
             <select name="sex" id="sex">
@@ -58,7 +58,7 @@
         </form>
 
         {{#if message}}
-            <p>{{message}}</p>
+            <p class="messages">{{message}}</p>
         {{/if}}
         
     </div>
