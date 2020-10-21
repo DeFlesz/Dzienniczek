@@ -12,7 +12,9 @@
 
 
     <!--    fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100;700&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100;700&display=swap" rel="stylesheet">
+    <script src="/logout.js"></script>
+    </head>
 <body onload="startTime()">
 
 
@@ -37,7 +39,10 @@
 
     {{#if name}}
         <p>witaj, {{name}}</p>
+        
     {{/if}}
+    
+    
 </header>
 <div id="chart">
 
@@ -47,6 +52,8 @@
     <button type="button" onclick="window.location.href='/new_day_form'">Wprowadź<br> nowy<br> dzień<br></button>
     <button type="button" onclick="window.location.href='#'">Moje<br> dni<br></button>
 </div>
+
+<a href="/auth/logout">wyloguj</a>
 
 <script src="/theme-controller.js"></script>
 </body>
