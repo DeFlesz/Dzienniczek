@@ -35,7 +35,9 @@ router.get('/dashboard', (req, res) => {
         } else {
             const name = results[0].name;
             console.log(name);
-            return res.render('dashboard',{name: name});
+            return res.render('dashboard',{
+                name: name
+            });
         }
     });
     

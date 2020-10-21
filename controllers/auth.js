@@ -13,7 +13,13 @@ const db = mysql.createConnection({
 exports.register = (req, res) => {
     console.log(req.body);
 
-    const {email, password, passwordConfirm} = req.body;
+    const {name, email, password, passwordConfirm, date_of_birth, sex} = req.body;
+
+    if(!name || !date_of_birth || !sex){
+        return res.render('register', {
+            message: "wprowadź wszystkie dane"
+        })
+    }
 
     db.query('SELECT email FROM users WHERE email = ?;', [email],async (error, results) => {
         if(error){ 
@@ -33,7 +39,7 @@ exports.register = (req, res) => {
         let hashedPassword = await bcrypt.hash(password,8);
         console.log(hashedPassword);
 
-        db.query("INSERT INTO users SET ?", {email: email, password: hashedPassword  }, (error, results) =>{
+        db.query("INSERT INTO users SET ?", {email: email, password: hashedPassword, name: name, date_of_birth: date_of_birth, sex: sex  }, (error, results) =>{
             if(error){
                 console.log(error);
             } else {
