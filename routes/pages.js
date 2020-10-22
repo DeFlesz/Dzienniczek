@@ -36,7 +36,9 @@ router.get('/dashboard', (req, res) => {
     db.query('SELECT name FROM users WHERE id_user = ?;', [decodedCookie.id],async (error, results) => {
         if(error){
             console.log(error);
-            return res.render('/');
+            return res.render('index',{
+                message: "nie można połączyć z modułem aplikacji. Proszę spróbować później"
+            });
         } else {
             const name = results[0].name;
             console.log(name);
