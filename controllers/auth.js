@@ -46,7 +46,7 @@ exports.register = (req, res) => {
             if(error){
                 console.log(error);
             } else {
-                return res.render('register', {
+                return res.render('login', {
                     message: "zostałeś zarejestrowany"
                 });
             }
