@@ -24,6 +24,9 @@ exports.register = (req, res) => {
     db.query('SELECT email FROM users WHERE email = ?;', [email],async (error, results) => {
         if(error){ 
             console.log(error);
+            return res.render('index', {
+                message: "nie można połączyć z modułem aplikacji. Proszę spróbować później"
+            });
         } 
         if( results.length > 0) {
             return res.render('register', {
