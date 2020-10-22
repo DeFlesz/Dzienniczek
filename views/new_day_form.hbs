@@ -44,7 +44,7 @@
     <button class="tabchange" type="button" onclick="window.location.href='/dashboard'"><svg xmlns="http://www.w3.org/2000/svg" width="50.912" height="50.912" viewBox="0 0 50.912 50.912"><defs></defs><path class="a" d="M13.5,0V13.5H0v9H13.5V36h9V22.5H36v-9H22.5V0Z" transform="translate(0 25.456) rotate(-45)"/></svg></button>
 </nav>
 <main>
-<form>
+<form action="/dayadd" method="POST">
 <div id="Meal" class="tabcontent">
     <button type="button" style="float:right; margin-top: -1px;" onclick="underLine(2);"> <svg xmlns="http://www.w3.org/2000/svg" width="42.5" height="68.826" viewBox="0 0 42.5 68.826"><defs></defs><path class="a" d="M20.972,9l-8.087,8.087L39.154,43.413,12.885,69.739l8.087,8.087L55.385,43.413Z" transform="translate(-12.885 -9)"/></svg> </button>
     
@@ -72,21 +72,23 @@
 <div id="Workout" class="tabcontent">
     <button type="button" style="float: left;" onclick="underLine(1);"> <svg xmlns="http://www.w3.org/2000/svg" width="42.5" height="68.826" viewBox="0 0 42.5 68.826"><defs></defs><path class="a" d="M20.972,9l-8.087,8.087L39.154,43.413,12.885,69.739l8.087,8.087L55.385,43.413Z" transform="translate(55.385 77.826) rotate(180)"/></svg> </button>
     <p>Czy odbyłeś/aś dzisiaj trening?</p>
-    <input class=".ndf_ch" type="checkbox" name="workout_ch" id="workout_ch">
+    <input class=".ndf_ch" type="checkbox" name="workout" id="workout_ch" value="true">
     <button type="button" style="float: right; margin-top: -38px;" onclick="underLine(3);"> <svg xmlns="http://www.w3.org/2000/svg" width="42.5" height="68.826" viewBox="0 0 42.5 68.826"><defs></defs><path class="a" d="M20.972,9l-8.087,8.087L39.154,43.413,12.885,69.739l8.087,8.087L55.385,43.413Z" transform="translate(-12.885 -9)"/></svg> </button>
 </div>
 
 <div id="Weight" class="tabcontent">
     <button type="button" style="float: left;" onclick="underLine(2);"> <svg xmlns="http://www.w3.org/2000/svg" width="42.5" height="68.826" viewBox="0 0 42.5 68.826"><defs></defs><path class="a" d="M20.972,9l-8.087,8.087L39.154,43.413,12.885,69.739l8.087,8.087L55.385,43.413Z" transform="translate(55.385 77.826) rotate(180)"/></svg> </button>
-    <p>Czy ważyłeś/aś się dzisiaj?</p>
-    <input class=".ndf_ch" type="checkbox" name="weight_ch" id="weight_ch">
+    <p>Waga: </p>
+    <input class=".ndf_ch" type="text" name="weight" id="weight_ch">
+    <p>Wzrost: </p>
+    <input class=".ndf_ch" type="text" name="height" id="weight_ch">
     <button type="button" style="float: right;  margin-top: -38px;" onclick="underLine(4);"> <svg xmlns="http://www.w3.org/2000/svg" width="42.5" height="68.826" viewBox="0 0 42.5 68.826"><defs></defs><path class="a" d="M20.972,9l-8.087,8.087L39.154,43.413,12.885,69.739l8.087,8.087L55.385,43.413Z" transform="translate(-12.885 -9)"/></svg> </button>
 </div>
 
 <div id="Day_grade" class="tabcontent">
     <button type="button" style="float: left;" onclick="underLine(3);"> <svg xmlns="http://www.w3.org/2000/svg" width="42.5" height="68.826" viewBox="0 0 42.5 68.826"><defs></defs><path class="a" d="M20.972,9l-8.087,8.087L39.154,43.413,12.885,69.739l8.087,8.087L55.385,43.413Z" transform="translate(55.385 77.826) rotate(180)"/></svg> </button>
     <p>Jak oceniasz swój dzień?</p>
-    <select name="Day_grade" id="Day_grade">
+    <select name="day_grade" id="Day_grade">
         <option value="0">0</option>
         <option value="1">1</option>
         <option value="2">2</option>
