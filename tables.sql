@@ -11,7 +11,7 @@ CREATE TABLE users (
 
 CREATE TABLE food (
     id_food int primary key not null auto_increment,
-    id_user int foreign key references users(id_user) not null, 
+    id_user int not null, 
     day date not null, 
     breakfast int default 0, 
     dinner int default 0, 
@@ -21,7 +21,7 @@ CREATE TABLE food (
 
 CREATE TABLE weight (
     id_weight int primary key not null auto_increment,
-    id_user int foreign key references users(id_user) not null,
+    id_user int not null,
     day date not null,
     weight int,
     height int,
@@ -30,14 +30,14 @@ CREATE TABLE weight (
 
 CREATE TABLE workout (
     id_workout int primary key not null auto_increment,
-    id_weight int foreign key references weight(id_weight) not null,
+    id_weight int not null,
     workout_type varchar(50),
     workout_time int default 0
 );
 
 CREATE TABLE feeling (
     id_feeling int primary key not null auto_increment,
-    id_user int foreign key references users(id_user) not null,
+    id_user int not null,
     day date not null,
     day_sum int default 3,
     pain boolean default FALSE
@@ -45,7 +45,7 @@ CREATE TABLE feeling (
 
 CREATE TABLE pain_symptoms (
     id_symptom int primary key not null auto_increment,
-    id_feeling int foreign key references feeling(id_feeling) not null,
+    id_feeling int not null,
     symptom varchar(100),
     symptom_description text 
 );
