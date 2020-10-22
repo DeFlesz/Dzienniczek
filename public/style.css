@@ -115,6 +115,7 @@ form div label{
 #register_box {
     text-align: center;
 }
+
 a {
     color: var(--colorMain);
     font-family: 'Impact';
@@ -168,6 +169,7 @@ nav{
 main div{
     font-size: 32px ;
 }
+
 #Day_grade select {
    background-color: var(--colorBackground);
     color: var(--colorMain) ;
@@ -191,4 +193,17 @@ div form select{
     font-size: 20px;
     padding: auto;
     margin: auto;
+}
+
+.l-right {
+    float: right;
+}
+
+.ndf_ch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
 }
