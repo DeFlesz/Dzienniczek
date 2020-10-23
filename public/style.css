@@ -356,6 +356,14 @@ header a{
     background-color: var(--colorBackground);
 }
 
+.days-records .cell, .days-records .cell_highlighted {
+    text-align: left;
+    padding: 4px;
+    padding-left: 4px;
+    border: 1px solid var(--colorMain);
+    font-size:24px;
+}
+
 .cell_highlighted {
     padding-top: 15px;
     text-align: center;
@@ -370,6 +378,7 @@ header a{
 }
 
 .days-records .cell:hover{
+    color: var(--colorBackground);
     background-color: var(--colorMain);
     cursor: pointer;
 }
