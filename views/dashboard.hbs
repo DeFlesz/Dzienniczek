@@ -57,13 +57,103 @@
     <div id="inf_box">Tu kiedyś będzie zawartość</div>
 
     <div id="right_side">
-        <div id="kalendarz">
+        <div id="calendar">
+            <div id="calendar-header">
+                <div id="calendar-buttons">
+                    <button id="prev" type="button"><</button>
+                    <button id="next" type="button">></button>
+                </div>
 
+                <div id="calendar-month-year"></div>
+            </div>
+
+            <div id="calendar-table">
+                <div id="days-names-span">
+                    <div class="cell" id="monday">Pon</div>
+                    <div class="cell" id="tuesday">Wto</div>
+                    <div class="cell" id="wednesday">Śro</div>
+                    <div class="cell" id="thursday">Czw</div>
+                    <div class="cell" id="friday">Pt</div>
+                    <div class="cell" id="saturday">Sob</div>
+                    <div class="cell" id="sunday">Nie</div>
+                </div>
+                <br>
+
+                <div class="days-records" id="days-record1">
+                    <div class="cell" name="day_cell" id="">1</div>
+                    <div class="cell" name="day_cell" id="">2</div>
+                    <div class="cell" name="day_cell" id="">3</div>
+                    <div class="cell" name="day_cell" id="">4</div>
+                    <div class="cell" name="day_cell" id="">5</div>
+                    <div class="cell" name="day_cell" id="">6</div>
+                    <div class="cell" name="day_cell" id="">7</div>
+
+                </div>
+                <br>
+
+                <div class="days-records" id="days-record2">
+                    <div class="cell" name="day_cell" id="">8</div>
+                    <div class="cell" name="day_cell" id="">9</div>
+                    <div class="cell" name="day_cell" id="">10</div>
+                    <div class="cell" name="day_cell" id="">11</div>
+                    <div class="cell" name="day_cell" id="">12</div>
+                    <div class="cell" name="day_cell" id="">13</div>
+                    <div class="cell" name="day_cell" id="">14</div>
+
+                </div>
+                <br>
+
+                <div class="days-records" id="days-record3">
+                    <div class="cell" name="day_cell" id="">15</div>
+                    <div class="cell" name="day_cell" id="">16</div>
+                    <div class="cell" name="day_cell" id="">17</div>
+                    <div class="cell" name="day_cell" id="">18</div>
+                    <div class="cell" name="day_cell" id="">19</div>
+                    <div class="cell" name="day_cell" id="">20</div>
+                    <div class="cell" name="day_cell" id="">21</div>
+
+                </div>
+                <br>
+
+                <div class="days-records" id="days-record4">
+                    <div class="cell" name="day_cell" id="">22</div>
+                    <div class="cell" name="day_cell" id="">23</div>
+                    <div class="cell" name="day_cell" id="">24</div>
+                    <div class="cell" name="day_cell" id="">25</div>
+                    <div class="cell" name="day_cell" id="">26</div>
+                    <div class="cell" name="day_cell" id="">27</div>
+                    <div class="cell" name="day_cell" id="">28</div>
+
+                </div>
+                <br>
+
+                <div class="days-records" id="days-record5">
+                    <div class="cell" name="day_cell" id="">29</div>
+                    <div class="cell" name="day_cell" id="">30</div>
+                    <div class="cell" name="day_cell" id="">31</div>
+                    <div class="cell" name="day_cell" id="">32</div>
+                    <div class="cell" name="day_cell" id="">33</div>
+                    <div class="cell" name="day_cell" id="">34</div>
+                    <div class="cell" name="day_cell" id="">35</div>
+                </div>
+                <br>
+
+                <div class="days-records" id="days-record6">
+                    <div class="cell" name="day_cell" id="">36</div>
+                    <div class="cell" name="day_cell" id="">37</div>
+                    <div class="cell" name="day_cell" id="">38</div>
+                    <div class="cell" name="day_cell" id="">39</div>
+                    <div class="cell" name="day_cell" id="">40</div>
+                    <div class="cell" name="day_cell" id="">41</div>
+                    <div class="cell" name="day_cell" id="">42</div>
+                </div>
+            </div>
         </div>
         <div class="input_buttons">
             <button style="float: left" type="button" onclick="window.location.href='/new_day_form'"><svg xmlns="http://www.w3.org/2000/svg" width="222" height="185" viewBox="0 0 222 185"><defs><style>.a{font-size:48px;font-family:Impact;}.b{fill:none;}.c,.d{stroke:none;}</style></defs><g transform="translate(-1402 -669)"><text class="a" transform="translate(1402 669)"><tspan x="9.082" y="48">Wprowadź </tspan><tspan x="58.758" y="106">nowy </tspan><tspan x="58.711" y="164">dzień</tspan></text><g class="b" transform="translate(1402 672)"><path class="c" d="M0,0H221.961V178H0Z"/><path class="d" d="M 4 4 L 4 174 L 217.96142578125 174 L 217.96142578125 4 L 4 4 M 0 0 L 221.96142578125 0 L 221.96142578125 178 L 0 178 L 0 0 Z"/></g></g></svg></button>
             <button style="float: right" type="button" onclick="window.location.href='#'"> <svg xmlns="http://www.w3.org/2000/svg" width="222" height="182" viewBox="0 0 222 182"><defs><style>.a{font-size:50px;font-family:Impact;}.b{fill:none;}.c,.d{stroke:none;}</style></defs><g transform="translate(-1402 -672)"><text class="a" transform="translate(1402 699)"><tspan x="60.524" y="50">Moje </tspan><tspan x="78.09" y="111">dni</tspan></text><g class="b" transform="translate(1402 672)"><path class="c" d="M0,0H221.961V178H0Z"/><path class="d" d="M 4 4 L 4 174 L 217.96142578125 174 L 217.96142578125 4 L 4 4 M 0 0 L 221.96142578125 0 L 221.96142578125 178 L 0 178 L 0 0 Z"/></g></g></svg> </button>
         </div>
+
     </div>
 
 </div>
@@ -74,7 +164,6 @@
 
 </div>
 
-
-<script src="/theme-controller.js"></script>
+<script type="text/javascript" src="/theme-controller.js"></script>
 </body>
 </html>

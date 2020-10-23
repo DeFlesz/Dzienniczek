@@ -1,6 +1,7 @@
 :root {
     --colorMain:#808080;
     --colorBackground: #DEDEDE;
+    --size: 400;
     /*--svgColour: #808080;*/
     /*inne kolory:*/
 
@@ -237,15 +238,7 @@ div form select{
     display: flex;
     flex-flow: column;
 }
-#kalendarz {
-    height: 407px;
-    width: 480px;
-    background-color: var(--colorMain);
-}
-#right_side {
-    display: flex;
-    flex-flow: column;
-}
+
 header a{
     float: right;
     margin-right: 28px;
@@ -256,11 +249,162 @@ header a{
     float: right;
 }
 
-.ndf_ch {
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+
+.ndf_ch input{
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
+    cursor: pointer;
+    height: 50;
+    width: 50;
+}
+
+.tabcontent div button {
+    margin-top: 50%;
+    margin-left: 20px;
+    font-size: 50px;
+    border: 2px solid var(--colorMain);
+}
+
+.tabcontent div button:hover {
+    background-color: var(--colorMain);
+    color: var(--colorBackground);
+}
+
+/*
+#kalendarz {
+    height: 407px;
+    width: 480px;
+    background-color: var(--colorMain);
+}
+*/
+
+
+#right_side {
+    width: 465px;
+    height: var(--size);
+    background-color: var(--colorMain);
+    display: flex;
+    flex-flow: column;
+}
+
+/* Kalendarz */
+#calendar {
+    width: 465px;
+    height: var(--size);
+    padding: 5px;
+    font-family: impact;
+    display: block;
+}
+
+#calendar-buttons {
+    font-size: 20px;
+    height:30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#calendar #prev,
+#calendar #next {
+    position: relative;
+    z-index: 1;
+    cursor:pointer;
+    width: 30px;
+    background-color: transparent;
+    border:0;
+    color: var(--colorBackground);
+}
+
+#calendar #prev:hover,
+#calendar #next:hover {
+    background-color: var(--colorBackground);
+    color: var(--colorMain);
+}
+
+#calendar #calendar-month-year {
+    font-size:22px;
+    color: var(--colorBackground);
+    padding: 0 40px;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#calendar #calendar-header {
+    height:20px;
+    position: relative;
+}
+
+#calendar #calendar-table {
+    position: relative;
+    padding-top:15px;
+    font-size:18px;
+    color: var(--colorMain);
+    width: 100%;
+}
+
+.cell {
+    text-align: center;
+    width: 65px;
+    height: 65px;
+}
+
+.days-records .cell{
+    padding-top: 15px;
+    background-color: var(--colorBackground);
+}
+
+.cell_highlighted {
+    padding-top: 15px;
+    text-align: center;
+    width: 65px;
+    height: 65px;
+}
+
+.days-records {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -22px;
+}
+
+.days-records .cell:hover{
+    background-color: var(--colorMain);
+    cursor: pointer;
+}
+
+.cell_highlighted {
+    color: white;
+    background-color: red;
+}
+
+.cell_highlighted:hover {
+    background-color: chocolate;
+    cursor: pointer;
+}
+
+#days-names-span {
+    font-weight: normal;
+    height: 40px;
+    font-size:24px;
+    color:var(--colorBackground);
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: -10px;
+    
 }

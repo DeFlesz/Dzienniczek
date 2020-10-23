@@ -1,5 +1,5 @@
 //gathering local storage and root info
-let root = document.documentElement;
+const root = document.documentElement;
 let isContrast = localStorage.isContrast;
 let themeColour = localStorage.themeColour;
 
@@ -142,4 +142,123 @@ function underLine(number){
 
 themeAndContrastController('contrastSwitch');
 themeAndContrastController('themeChange');
-document.getElementById("defaultOpen").click();
+if (document.getElementById('defaultOpen')){
+    document.getElementById("defaultOpen").click();
+}
+
+class Calendar {
+    constructor(){
+        this.months = ['Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień'];
+        
+        this.date = new Date();
+
+        this.day_of_week = this.date.getDay();
+        this.day_of_month = this.date.getDate();
+        this.month = this.date.getMonth();
+        this.year = this.date.getFullYear();
+
+        this.divCalendar = document.getElementById('calendar');
+        this.divCalendarHeader = document.getElementById('calendar-header');
+        this.divCalendarTable = document.getElementById('calendar-table');
+        this.divCalendarMonthAndYear = document.getElementById('calendar-month-year');
+        this.divCalendarButtons = document.getElementById('calendar-buttons');
+        this.divCalendarPrev = document.getElementById('prev');
+        this.divCalendarNext = document.getElementById('next');
+        this.divCalendarLastRecord = document.getElementById('days-record6');
+
+        this.divCellsListQue = document.getElementsByName("day_cell");
+        this.divCellsList = Array.prototype.slice.call(this.divCellsListQue, 0 );
+
+        this.current_day = this.divCellsList[this.date.getDate()];
+
+    }
+
+    setMonthAndYear() {
+        this.divCalendarMonthAndYear.innerHTML = this.months[this.month] + " " + this.year;
+    }
+
+    setDaysInTable(){
+        for (let i = 0; i < this.divCellsList.length; i++) {
+            this.divCellsList[i].innerHTML = "";
+            this.divCellsList[i].style = "";
+        }
+
+        const daysInMonth = new Date(this.year, this.month+1, 0).getDate();
+        const tempDate = new Date(this.year, this.month, 1);
+        let firstMonthDay = tempDate.getDay();
+
+        if (firstMonthDay === 0) {
+            firstMonthDay = 7;
+        }
+
+        const monthEnd = daysInMonth + firstMonthDay - 1;
+
+        if (monthEnd >= 36){
+            root.style.setProperty('--size', '465px');
+            this.divCalendarLastRecord.style.opacity ='1';
+        } else {
+            root.style.setProperty('--size', '400px');
+            this.divCalendarLastRecord.style.opacity ='0';
+        }
+
+        for (let i=0; i<firstMonthDay-1; i++) {
+            this.divCellsList[i].innerHTML = "";
+            this.divCellsList[i].style.backgroundColor = "var(--colorMain)";
+            this.divCellsList[i].style.cursor = "default";
+        }
+        for (let i=monthEnd; i<this.divCellsList.length; i++) {
+            this.divCellsList[i].style.backgroundColor = "var(--colorMain)";
+            this.divCellsList[i].style.cursor = "default";
+        }
+
+        for (let i = firstMonthDay-1; i<monthEnd; i++) {
+            this.divCellsList[i].innerHTML = (i - firstMonthDay + 2).toString();
+            
+            if (this.year === this.date.getFullYear() && this.month === this.date.getMonth() && this.day_of_month === i - firstMonthDay + 2) {
+                let element = this.divCellsList[i];
+                element.className = "cell_highlighted";
+                this.current_day = this.divCellsList[i];
+            }
+            else if(this.current_day.className == 'cell_highlighted'){
+                let element = this.divCellsList[i];
+                element.className = "cell";
+            }
+
+        }
+
+    }
+
+    setButtons() {
+        this.divCalendarPrev.addEventListener("click", e => {
+            this.month--;
+            if (this.month < 0) {
+                this.month = 11;
+                this.year--;
+            }
+            this.setMonthAndYear();
+            this.setDaysInTable();
+            
+        });
+        this.divCalendarNext.addEventListener("click", e => {
+            this.month++;
+            if (this.month > 11) {
+                this.month = 0;
+                this.year++;
+            }
+            this.setMonthAndYear();
+            this.setDaysInTable();
+            
+        });
+    }
+
+    init(){
+        this.setMonthAndYear();
+        this.setDaysInTable();
+        this.setButtons();
+    }
+}
+
+if (document.getElementById('calendar')){
+    const calendar = new Calendar();
+    calendar.init()
+}

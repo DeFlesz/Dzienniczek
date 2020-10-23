@@ -11,7 +11,6 @@ function checkTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
 }
-
 /* old change contrast code (not saving status in local storage)
 function changeContrast() {
 
