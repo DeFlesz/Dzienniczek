@@ -88,7 +88,9 @@ header {
 
 #chart {
     background-color: var(--colorMain);
-    width: 200px;
+    width: 697px;
+    height: 255px;
+    /*margin-left: 40px;*/
 
 }
 form {
@@ -127,14 +129,18 @@ a {
 .input_buttons {
     color: var(--colorMain);
     text-decoration: none;
-    display: inline-block;
+    display: flex;
     font-size: 32px;
     /*padding: auto;*/
-    margin: auto;
+    /*margin: auto;*/
     cursor: pointer;
+    float: right;
+    margin-top: 10px;
+    width: 480px;
 }
 .input_buttons button {
     border: 2px solid var(--colorMain);
+    margin: 5px;
 }
 
 .tabchange {
@@ -189,6 +195,56 @@ div form select{
     color: var(--colorMain);
     font: inherit;
     font-size: 20px;
-    padding: auto;
+    /*padding: auto;*/
     margin: auto;
+}
+#welcomeMessage {
+    text-align: center;
+    font-family: Impact;
+    font-size: 30px;
+}
+.messages {
+    font-family: Impact;
+}
+
+#inf_box {
+    height: 612px;
+    width: 612px;
+    background-color: var(--colorMain);
+    /*float: right;*/
+    margin: 0 20px 0 20px;
+    color: var(--colorBackground);
+    font-family: Impact;
+    text-align: center;
+    font-size: 40px;
+}
+
+#calories {
+    width: 697px;
+    height: 352px;
+    background-color: var(--colorMain);
+    /*margin-left: 40px;*/
+    margin-top: 5px;
+}
+#dashboardContainer {
+    display: flex;
+    justify-content: center;
+}
+#food {
+    display: flex;
+    flex-flow: column;
+}
+#kalendarz {
+    height: 407px;
+    width: 480px;
+    background-color: var(--colorMain);
+}
+#right_side {
+    display: flex;
+    flex-flow: column;
+}
+header a{
+    float: right;
+    margin-right: 28px;
+
 }

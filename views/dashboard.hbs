@@ -4,7 +4,7 @@
     <title>Panel główny - pamiętniki.</title>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
 
     <!--    styles-->
     <link rel="stylesheet" href="/style.css">
@@ -36,24 +36,44 @@
     <div id="logo_cont">
         <img src="/svg/logo_pamietnik/logo_pamietnik_dark_gray.svg" alt="logo_pamietnik" id="logo"/>
     </div>
-
+    <a href="/auth/logout">wyloguj</a>
     {{#if name}}
-        <p class="messages">witaj, {{name}}</p>
+        <p class="messages" id="welcomeMessage">Witaj, {{name}}!</p>
         
     {{/if}}
     
     
 </header>
-<div id="chart">
+
+<div id="dashboardContainer">
+
+    <div id="left-side">
+    <div id="chart">
+    </div>
+    <div id="calories"></div>
+    </div>
+
+
+    <div id="inf_box">Tu kiedyś będzie zawartość</div>
+
+    <div id="right_side">
+        <div id="kalendarz">
+
+        </div>
+        <div class="input_buttons">
+            <button style="float: left" type="button" onclick="window.location.href='/new_day_form'"><svg xmlns="http://www.w3.org/2000/svg" width="222" height="185" viewBox="0 0 222 185"><defs><style>.a{font-size:48px;font-family:Impact;}.b{fill:none;}.c,.d{stroke:none;}</style></defs><g transform="translate(-1402 -669)"><text class="a" transform="translate(1402 669)"><tspan x="9.082" y="48">Wprowadź </tspan><tspan x="58.758" y="106">nowy </tspan><tspan x="58.711" y="164">dzień</tspan></text><g class="b" transform="translate(1402 672)"><path class="c" d="M0,0H221.961V178H0Z"/><path class="d" d="M 4 4 L 4 174 L 217.96142578125 174 L 217.96142578125 4 L 4 4 M 0 0 L 221.96142578125 0 L 221.96142578125 178 L 0 178 L 0 0 Z"/></g></g></svg></button>
+            <button style="float: right" type="button" onclick="window.location.href='#'"> <svg xmlns="http://www.w3.org/2000/svg" width="222" height="182" viewBox="0 0 222 182"><defs><style>.a{font-size:50px;font-family:Impact;}.b{fill:none;}.c,.d{stroke:none;}</style></defs><g transform="translate(-1402 -672)"><text class="a" transform="translate(1402 699)"><tspan x="60.524" y="50">Moje </tspan><tspan x="78.09" y="111">dni</tspan></text><g class="b" transform="translate(1402 672)"><path class="c" d="M0,0H221.961V178H0Z"/><path class="d" d="M 4 4 L 4 174 L 217.96142578125 174 L 217.96142578125 4 L 4 4 M 0 0 L 221.96142578125 0 L 221.96142578125 178 L 0 178 L 0 0 Z"/></g></g></svg> </button>
+        </div>
+    </div>
+
+</div>
+
+<div id="dashboardContainer2">
+
 
 
 </div>
-<div class="input_buttons">
-    <button type="button" onclick="window.location.href='/new_day_form'">Wprowadź<br> nowy<br> dzień<br></button>
-    <button type="button" onclick="window.location.href='#'">Moje<br> dni<br></button>
-</div>
 
-<a href="/auth/logout">wyloguj</a>
 
 <script src="/theme-controller.js"></script>
 </body>
