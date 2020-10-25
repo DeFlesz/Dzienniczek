@@ -6,10 +6,10 @@ const jwt = require('jsonwebtoken');
 const router = express.Router();
 
 const db = mysql.createConnection({
-    user: process.env.DATABASE_USER,
-    password: process.env.DATABASE_PASSWORD,
-    database: process.env.DATABASE,
-    socketPath: process.env.SOCKET_PATH
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME,
+    socketPath: process.env.DB_SOCKETPATH
 });
 
 
