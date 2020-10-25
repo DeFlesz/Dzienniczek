@@ -4,10 +4,10 @@ const jwt = require('jsonwebtoken');
 const cookieParser = require('cookie-parser');
 
 const db = mysql.createConnection({
-    host: process.env.DATABASE_HOST,
     user: process.env.DATABASE_USER,
     password: process.env.DATABASE_PASSWORD,
-    database: process.env.DATABASE
+    database: process.env.DATABASE,
+    socketPath: process.env.SOCKET_PATH
 });
 
 const router = express.Router();
