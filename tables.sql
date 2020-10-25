@@ -1,4 +1,4 @@
-create database pamietniki;
+CREATE DATABASE pamietniki;
 
 CREATE TABLE users (
     id_user int primary key not null auto_increment, 
